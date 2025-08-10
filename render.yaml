@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: telegram-ping-bot
+    env: python
+    buildCommand: ""
+    startCommand: python bot.py
+    envVars:
+      - key: BOT_TOKEN
+        value: <token_bot_telegram>
+      - key: PING_URL
+        value: https://your-url.com
+      - key: PING_INTERVAL
+        value: "300"
